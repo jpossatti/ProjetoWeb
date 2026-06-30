@@ -1,0 +1,115 @@
+@charset "UTF-8";
+
+.TabbedPanels {
+   float:left;
+   width:100%;
+   background:#CCC;   
+   overflow:hidden;
+   position:relative;
+}
+
+.TabbedPanelsTabGroup {
+   clear:left;
+   float:left;
+   list-style:none;
+   margin:0;
+   padding:0;
+   position:relative;
+   left:50%;
+   text-align:center;
+}
+
+.TabbedPanelsTab {
+	position: relative;
+	top: 1px;
+	float: left;
+	padding: 4px 10px;
+	margin: 0px 1px 0px 0px;
+	font: bold 0.7em sans-serif;
+	background-color: #CCC;
+	list-style: none;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	cursor: pointer;
+	display:block;
+    position:relative;
+   	right:50%;
+}
+
+.TabbedPanelsTabHover {
+	background-color: #CCC;
+}
+
+.TabbedPanelsTabSelected {
+	background-color: #69b9fe;
+}
+
+.TabbedPanelsTab a {
+	color: black;
+	text-decoration: none;
+}
+
+.TabbedPanelsContentGroup {
+	clear: both;
+	background-color: #06F;
+}
+
+.TabbedPanelsContent {
+   display:block;
+   margin:0 0 0 1px;
+   padding:3px 10px;
+   background-image: url(../img/submenu.jpg);
+   background-repeat: repeat-x; height: 48px;
+   color:#fff;
+   text-decoration:none;
+   line-height:2.4em;
+   text-align:center;
+}
+
+.TabbedPanelsContentVisible {
+}
+
+.VTabbedPanels .TabbedPanelsTabGroup {
+	float: left;
+	width: 10em;
+	height: 20em;
+	background-color: #EEE;
+	position: relative;
+	border-top: solid 1px #999;
+	border-right: solid 1px #999;
+	border-left: solid 1px #CCC;
+	border-bottom: solid 1px #CCC;
+}
+
+.VTabbedPanels .TabbedPanelsTab {
+	float: none;
+	margin: 0px;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+}
+
+
+.VTabbedPanels .TabbedPanelsTabSelected {
+	background-color: #06F;
+	border-bottom: solid 1px #999;
+}
+
+.VTabbedPanels .TabbedPanelsContentGroup {
+	clear: none;
+	float: left;
+	padding: 0px;
+	width: 30em;
+	height: 20em;
+}
+#textorodape{
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 7pt;
+	text-align: center;
+	color: #FFF;
+}
+#faculdade{
+	font-size:9pt;
+	color:#39F;
+	text-align:center;
+}

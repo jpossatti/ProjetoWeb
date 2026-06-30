@@ -1,0 +1,583 @@
+/* 
+    Document   : style_login
+    Created on : 16/09/2011, 19:16:42
+    Author     : Anderson
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+html, body, div, h1, h2, h3, h4, h5, h6, p, img, dl, dt, dd, ol, ul, li, table, tr, td, form, object, embed, article, aside, canvas, command, details, figcaption, figure, footer, group, header, hgroup, mark, menu, meter, nav, output, progress, section, summary, time, audio, video {
+    border: 0 none;
+    margin: 0;
+    padding: 0;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+html {
+    background: none repeat scroll 0 0 #FFFFFF;
+    color: #333333;
+    direction: ltr;
+    font: 81.25%/1 arial,helvetica,sans-serif;
+}
+a {
+    color: #1155CC;
+    text-decoration: none;
+}
+a:active {
+    color: #D14836;
+}
+a:hover {
+    text-decoration: underline;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: #222222;
+    font-size: 1.54em;
+    font-weight: normal;
+    line-height: 24px;
+    margin: 0 0 0.46em;
+}
+p {
+    line-height: 17px;
+    margin: 0 0 1em;
+}
+ol, ul {
+    line-height: 17px;
+    list-style: none outside none;
+    margin: 0 0 1em;
+}
+li {
+    margin: 0 0 0.5em;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+strong {
+    color: #222222;
+}
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+}
+button::-moz-focus-inner, input::-moz-focus-inner {
+    border: 0 none;
+}
+html, body {
+    height: 100%;
+    min-width: 100%;
+    position: absolute;
+}
+.wrapper {
+    min-height: 100%;
+    position: relative;
+}
+.content {
+    margin: 0 auto;
+    padding: 0 44px;
+    width: 650px;
+}
+.google-header-bar {
+    background: none repeat scroll 0 0 #F5F5F5;
+    border-bottom: 1px solid #E5E5E5;
+    height: 71px;
+    overflow: hidden;
+}
+.header .logo {
+    float: left;
+    margin: 18px 0 0 -1px;
+}
+.header .signin, .header .signup {
+    float: right;
+    font-weight: bold;
+    margin: 28px 0 0;
+}
+.header .signup-button {
+    float: right;
+    margin: 22px 0 0;
+}
+.header .signup-button a {
+    margin: 0 0 0 1em;
+    position: relative;
+    top: -1px;
+}
+.main {
+    padding-bottom: 125px;
+    padding-top: 23px;
+}
+.google-footer-bar {
+    border-top: 1px solid #EBEBEB;
+    bottom: 0;
+    height: 35px;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+}
+.footer {
+    font-size: 0.85em;
+    line-height: 0;
+    padding-top: 9px;
+    white-space: nowrap;
+}
+.footer ul {
+    color: #999999;
+    float: left;
+    max-width: 80%;
+}
+.footer ul li {
+    display: inline;
+    padding: 0 1.5em 0 0;
+}
+.footer form {
+    text-align: right;
+}
+.footer form .lang-chooser {
+    max-width: 20%;
+}
+.announce-bar {
+    background: none repeat scroll 0 0 #F9EDBE;
+    border-bottom: 1px solid #EFE1AC;
+    border-top: 1px solid #EFE1AC;
+    bottom: 35px;
+    height: 33px;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+}
+.announce-bar .message {
+    font-size: 0.85em;
+    line-height: 33px;
+    margin: 0;
+}
+.announce-bar a {
+    margin: 0 0 0 1em;
+}
+.clearfix:after {
+    clear: both;
+    content: ".";
+    display: block;
+    font-size: 0;
+    height: 0;
+    visibility: hidden;
+}
+* html .clearfix {
+}
+:first-child + html .clearfix {
+}
+input[type="email"], input[type="password"], input[type="text"], input[type="url"] {
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    -moz-box-sizing: border-box;
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-color: #C0C0C0 #D9D9D9 #D9D9D9;
+    border-radius: 1px 1px 1px 1px;
+    border-right: 1px solid #D9D9D9;
+    border-style: solid;
+    border-width: 1px;
+    display: inline-block;
+    height: 29px;
+    margin: 0;
+    padding-left: 8px;
+}
+input[type="email"]:hover, input[type="password"]:hover, input[type="text"]:hover, input[type="url"]:hover {
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: #A0A0A0 #B9B9B9 #B9B9B9;
+    border-right: 1px solid #B9B9B9;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) inset;
+}
+input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focus, input[type="url"]:focus {
+    border: 1px solid #4D90FE;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3) inset;
+    outline: medium none;
+}
+input[type="email"][disabled="disabled"], input[type="password"][disabled="disabled"], input[type="text"][disabled="disabled"], input[type="url"][disabled="disabled"] {
+    background: none repeat scroll 0 0 #F5F5F5;
+    border: 1px solid #E5E5E5;
+}
+input[type="email"][disabled="disabled"]:hover, input[type="password"][disabled="disabled"]:hover, input[type="text"][disabled="disabled"]:hover, input[type="url"][disabled="disabled"]:hover {
+    box-shadow: none;
+}
+input[type="checkbox"], input[type="radio"] {
+    -moz-box-sizing: border-box;
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #DCDCDC;
+    border-radius: 1px 1px 1px 1px;
+    cursor: pointer;
+    height: 13px;
+    margin: 0;
+    position: relative;
+    vertical-align: bottom;
+    width: 13px;
+}
+input[type="checkbox"]:active, input[type="radio"]:active {
+    background: none repeat scroll 0 0 #EBEBEB;
+    border-color: #C6C6C6;
+}
+input[type="checkbox"]:hover {
+    border-color: #C6C6C6;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1) inset;
+}
+input[type="radio"] {
+    border-radius: 1em 1em 1em 1em;
+    height: 15px;
+    width: 15px;
+}
+input[type="checkbox"]:checked, input[type="radio"]:checked {
+    background: none repeat scroll 0 0 #FFFFFF;
+}
+input[type="radio"]:checked:after {
+    background: none repeat scroll 0 0 #666666;
+    border-radius: 1em 1em 1em 1em;
+    content: "";
+    display: block;
+    height: 7px;
+    left: 3px;
+    position: relative;
+    top: 3px;
+    width: 7px;
+}
+input[type="checkbox"]:checked:after {
+    content: url("//ssl.gstatic.com/ui/v1/menu/checkmark.png");
+    display: block;
+    left: -5px;
+    position: absolute;
+    top: -6px;
+}
+input[type="checkbox"]:focus {
+    border-color: #4D90FE;
+    outline: medium none;
+}
+.g-button {
+    -moz-transition: all 0.218s ease 0s;
+    -moz-user-select: none;
+    background-color: #F5F5F5;
+    background-image: -moz-linear-gradient(center top , #F5F5F5, #F1F1F1);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 2px 2px 2px 2px;
+    color: #555555;
+    cursor: default;
+    display: inline-block;
+    font-size: 11px;
+    font-weight: bold;
+    height: 27px;
+    line-height: 27px;
+    min-width: 54px;
+    padding: 0 8px;
+    text-align: center;
+}
+* + html .g-button {
+    min-width: 70px;
+}
+button.g-button, input.g-button[type="submit"] {
+    height: 29px;
+    line-height: 29px;
+}
+* + html button.g-button, * + html input.g-button[type="submit"] {
+    overflow: visible;
+}
+.g-button:hover {
+    -moz-transition: all 0s ease 0s;
+    background-color: #F8F8F8;
+    background-image: -moz-linear-gradient(center top , #F8F8F8, #F1F1F1);
+    border: 1px solid #C6C6C6;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    color: #333333;
+    text-decoration: none;
+}
+.g-button:active {
+    background-color: #F6F6F6;
+    background-image: -moz-linear-gradient(center top , #F6F6F6, #F1F1F1);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) inset;
+}
+.g-button:visited {
+    color: #666666;
+}
+.g-button-submit {
+    background-color: #4D90FE;
+    background-image: -moz-linear-gradient(center top , #4D90FE, #4787ED);
+    border: 1px solid #3079ED;
+    color: #FFFFFF;
+    text-shadow: 0 1px rgba(0, 0, 0, 0.1);
+}
+.g-button-submit:hover {
+    background-color: #357AE8;
+    background-image: -moz-linear-gradient(center top , #4D90FE, #357AE8);
+    border: 1px solid #2F5BB7;
+    color: #FFFFFF;
+    text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+}
+.g-button-submit:active {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3) inset;
+}
+.g-button-share {
+    background-color: #3D9400;
+    background-image: -moz-linear-gradient(center top , #3D9400, #398A00);
+    border: 1px solid #29691D;
+    color: #FFFFFF;
+    text-shadow: 0 1px rgba(0, 0, 0, 0.1);
+}
+.g-button-share:hover {
+    background-color: #368200;
+    background-image: -moz-linear-gradient(center top , #3D9400, #368200);
+    border: 1px solid #2D6200;
+    color: #FFFFFF;
+    text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+}
+.g-button-share:active {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3) inset;
+}
+.g-button-red {
+    background-color: #D14836;
+    background-image: -moz-linear-gradient(center top , #DD4B39, #D14836);
+    border: 1px solid transparent;
+    color: #FFFFFF;
+    text-shadow: 0 1px rgba(0, 0, 0, 0.1);
+    text-transform: uppercase;
+}
+.g-button-red:hover {
+    background-color: #C53727;
+    background-image: -moz-linear-gradient(center top , #DD4B39, #C53727);
+    border: 1px solid #B0281A;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    color: #FFFFFF;
+    text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+}
+.g-button-red:active {
+    background-color: #B0281A;
+    background-image: -moz-linear-gradient(center top , #DD4B39, #B0281A);
+    border: 1px solid #992A1B;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3) inset;
+}
+.g-button-white {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #DCDCDC;
+    color: #666666;
+}
+.g-button-white:hover {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #C6C6C6;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    color: #333333;
+}
+.g-button-white:active {
+    background: none repeat scroll 0 0 #FFFFFF;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) inset;
+}
+.g-button-red:visited, .g-button-share:visited, .g-button-submit:visited {
+    color: #FFFFFF;
+}
+.g-button-submit:focus, .g-button-share:focus, .g-button-red:focus {
+    box-shadow: 0 0 0 1px #FFFFFF inset;
+}
+.g-button-share:focus {
+    border-color: #29691D;
+}
+.g-button-red:focus {
+    border-color: #D14836;
+}
+.g-button-submit:focus:hover, .g-button-share:focus:hover, .g-button-red:focus:hover {
+    box-shadow: 0 0 0 1px #FFFFFF inset, 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+.g-button img {
+    display: inline-block;
+    margin: -3px 0 0;
+    opacity: 0.55;
+    vertical-align: middle;
+}
+* + html .g-button img {
+    margin: 4px 0 0;
+}
+.g-button:hover img {
+    opacity: 0.72;
+}
+.g-button:active img {
+    opacity: 1;
+}
+.errormsg {
+    color: #DD4B39;
+    display: block;
+    line-height: 17px;
+    margin: 0.5em 0 0;
+}
+.training-msg {
+    background: none repeat scroll 0 0 #F9EDBE;
+    padding: 0.5em 8px;
+}
+.training-msg p {
+    margin: 0 0 0.5em;
+}
+input.form-error[type="email"], input.form-error[type="password"], input.form-error[type="text"], input.form-error[type="url"] {
+    border: 1px solid #DD4B39;
+}
+.help-link {
+    background: none repeat scroll 0 0 #DD4B39;
+    border-radius: 1em 1em 1em 1em;
+    color: #FFFFFF;
+    display: inline-block;
+    font-weight: bold;
+    padding: 0 5px;
+    position: relative;
+    text-decoration: none;
+    top: 0;
+}
+.help-link:visited {
+    color: #FFFFFF;
+}
+.help-link:hover {
+    color: #FFFFFF;
+    opacity: 0.7;
+}
+.content {
+    max-width: 1000px;
+    min-width: 780px;
+    width: auto;
+}
+.product-info {
+    margin: 0 385px 0 0;
+}
+.product-info h3 {
+    font-size: 1.23em;
+    font-weight: normal;
+}
+.product-info a:visited {
+    color: #6611CC;
+}
+.sign-in {
+    float: center;
+    width: 335px;
+    height: auto;
+}
+.signin-box, .accountchooser-box {
+    background: none repeat scroll 0 0 #E8E8E8;
+    border: 1px solid #E5E5E5;
+    margin: 12px 0 0;
+    padding: 20px 25px 15px;
+}
+.product-headers {
+    margin: 0 0 1.5em;
+}
+.product-headers h1 {
+    color: #DD4B39;
+    font-size: 25px;
+    margin: 0;
+}
+.product-headers h2 {
+    font-size: 16px;
+    margin: 0.4em 0 0;
+}
+.features {
+    margin: 2em 0 0;
+    overflow: hidden;
+}
+.features li {
+    margin: 3px 0 2em;
+}
+.features img {
+    float: left;
+    margin: -3px 0 0;
+}
+.features p {
+    margin: 0 0 0 68px;
+}
+.features .title {
+    font-size: 16px;
+    margin-bottom: 0.3em;
+}
+.features.no-icon p {
+    margin: 0;
+}
+.features .small-title {
+    font-size: 1em;
+    font-weight: bold;
+}
+.notification-bar {
+    background: none repeat scroll 0 0 #F9EDBE;
+    padding: 8px;
+}
+.signin-box h2 {
+    font-size: 16px;
+    height: 16px;
+    line-height: 16px;
+    margin: 0 0 1.2em;
+    position: relative;
+}
+.signin-box label {
+    display: block;
+    margin: 0 0 1.5em;
+}
+.signin-box input[type="text"], .signin-box input[type="password"] {
+    font-size: 15px;
+    height: 32px;
+    width: 100%;
+}
+.signin-box .email-label, .signin-box .passwd-label {
+    -moz-user-select: none;
+    display: block;
+    font-weight: bold;
+    margin: 0 0 0.5em;
+}
+.signin-box .reauth {
+    display: inline-block;
+    font-size: 15px;
+    height: 29px;
+    line-height: 29px;
+    margin: 0;
+}
+.signin-box label.remember {
+    display: inline-block;
+    position: relative;
+    top: -1px;
+}
+.signin-box .remember-label {
+    -moz-user-select: none;
+    color: #666666;
+    font-weight: normal;
+    line-height: 17px;
+    padding: 0 0 0 0.4em;
+    position: relative;
+    top: 2px;
+}
+.signin-box .g-button img {
+    opacity: 1;
+}
+.signin-box input[type="submit"] {
+    font-size: 13px;
+    height: 32px;
+    margin: 0 1.5em 1.2em 0;
+}
+.signin-box ul {
+    margin: 0;
+}
+.mail ul.mail-links {
+    list-style: none outside none;
+    margin: 0;
+    overflow: hidden;
+}
+.mail ul.mail-links li {
+    float: left;
+    margin: 0 20px 0 0;
+}
+
+fieldset {
+    border: none;
+    width: 390px; /*Largura da Página */
+    height: 200px;
+    margin-top :0px ;  
+    margin: 0 auto;;
+    padding: 5px; /*Distancia da borda para o conteudo*/    
+}

@@ -1,0 +1,17 @@
+/* 
+    Document   : stylelogin
+    Created on : 25/10/2011, 12:44:34
+    Author     : Anderson
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+body{
+    background-image: url('../img/headerLogin.jpg');
+    background-repeat: repeat-x;
+}
